@@ -74,7 +74,7 @@ function sortInventory(&$inventory, $sortBy){
   $sortArray = array();
   $bookStorageArray = array();
 
-  foreach ($inventory as $index => $book) {
+  foreach ($inventory as $book) {
     $sortArray[] = $book[$sortBy]; // appending elements to sort them out
     $bookStorageArray[$book[$sortBy]] = $book;
   };
